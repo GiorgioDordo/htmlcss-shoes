@@ -15,7 +15,11 @@ body {
 }
 
 .flex {
-    display: felx;
+    display: flex;
+}
+
+html {
+    overflow-y: hidden;
 }
 
 
@@ -51,4 +55,45 @@ h1 {
 .yellow {
     background-color: rgb(254,255,1);
     color: green;
+}
+
+/* SIIDE MENU */
+
+.side-menu {
+    position: fixed;
+    top: 50px;
+    right: 25px;
+}
+
+ul {
+    list-style-type: none;
+    flex-direction: row;
+    gap: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.side-menu a {
+    color: black;
+    background-color: white;
+    font-size: 18px;
+    display: inline-block;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+}
+
+.side-menu a:hover {
+    scale: 1.1;
+}
+
+.side-menu a:active {
+    scale: 1;
 }
